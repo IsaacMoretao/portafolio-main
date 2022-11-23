@@ -1,5 +1,17 @@
 <img src='./assets/VidioRedme.gif' />
 
+<p align="center">
+  <img alt="EddyPBR" src="https://img.shields.io/badge/Developed%20by%3A-IsaacMoretao-%23DD3B3F" />
+  <img alt="License MIT" src="https://img.shields.io/badge/License-MIT-%2398C611" />
+  <img alt="Typescript" src="https://img.shields.io/badge/Main%20lenguage-Html-%232F74C0" /> <br />
+</p> 
+<p align="center">
+This is my newest portfolio, made in JavaScript with the aim of demonstrating my projects, <br/>
+skills, and much more. to see the result <a href='https://isaacmoretao.github.io/portafolio-main/'> Click here </a>
+</p>
+
+<br/><br/>
+
 <h1 align="center">
   🙋‍♂️ Isaac Moretão 
 </h1>
