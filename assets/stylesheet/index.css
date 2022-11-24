@@ -65,13 +65,8 @@ html::-webkit-scrollbar-thumb {
     background: rgba(41,41,41,.3);
 }
 
-.logo {
-    color: var(--beaver);
-    font-family: 'Cooper Hewitt';
-    font-weight: bold;
-    font-size: 1.8rem;
-    letter-spacing: .3rem;
-    text-decoration: none;  
+.logo img{
+    max-height: 55px;
 }
 
 nav.nav_menu.active {
