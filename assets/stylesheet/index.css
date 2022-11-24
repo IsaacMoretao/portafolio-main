@@ -74,11 +74,13 @@ nav.nav_menu.active {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
     position: absolute;
     left: 0;
     top: 5.3rem;
     width: 100%;
     height: auto;
+    
     background-color: var(--eerie-black);
     box-shadow: 0 10px 16px -6px rgb(5 5 5 / 30%), 0 25px 10px -24px rgb(5 5 5 / 10%);
     animation: ease .4s left forwards;
