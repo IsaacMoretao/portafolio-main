@@ -577,6 +577,7 @@ img.logo-sena {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 100%
 }
 
 .cards--proyectos {
@@ -631,7 +632,9 @@ img.logo-sena {
 
 .container_btn--proyectos {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
 }
 
 .container_btn--proyectos a{
