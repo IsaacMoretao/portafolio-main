@@ -20,23 +20,23 @@
     color: red;
 }
 
-html {
+* {
     font-size: 62.5%;
     scrollbar-width: thin;
     scrollbar-color: var(--beaver) var(--eerie-black);
     scroll-behavior: smooth;
 }
 
-html::-webkit-scrollbar {
+*::-webkit-scrollbar {
     width: 8px;
 }
 
-html::-webkit-scrollbar-track {
+*::-webkit-scrollbar-track {
     background-color: var(--eerie-black);
 }
 
 
-html::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
     background-color: var(--beaver);;
 }
 
@@ -469,6 +469,77 @@ span+span {
     letter-spacing: .1rem;
     font-size: 1.4rem;
     margin-bottom: .7rem;
+}
+
+.cards-indication { ///////////////////////////////////////
+    background-color: var(--jet);
+    overflow-x: scroll;
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    padding: 100px;
+}
+
+
+.card--indication{
+    background-color: var(--eerie-black);
+    min-width: 350px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+
+
+.card--indication header {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    height: 40px;
+    
+    padding-top: 15px;
+    padding-left: 15px;
+    width: 350px;
+}
+
+.card--indication header strong{
+    color: var(--white);
+    font-family: 'Cooper Hewitt';
+    letter-spacing: .1rem;
+    font-size: 1.4rem;
+}
+
+.card--indication header img {
+    border-radius: 1000px;
+    height: 30px;
+    width: 30px;
+}
+
+.card--indication main {
+    height: 150px;
+    padding: 15px;
+    width: 350px;
+}
+
+.card--indication main p {
+    color: var(--white);
+    font-family: 'Cooper Hewitt';
+    letter-spacing: .1rem;
+    font-size: 1.4rem;
+}
+
+.card--indication footer {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    gap: 10;
+    height: 40px;
+    width: 350px;
+}
+
+.card--indication footer img {
+    height: 20px;
+    width: 20px
 }
 
 /* Formación */
