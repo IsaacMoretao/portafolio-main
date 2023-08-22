@@ -102,9 +102,9 @@ div.btn {
 .container_parrafo-info p {
     font-family: 'Cooper Hewitt';
     color: var(--light-grey);
-    font-size: 1.4rem;
+    font-size: 17px;
     letter-spacing: 1px;
-    line-height: 2rem;
+
 }
 
 .container_button {
@@ -116,7 +116,7 @@ div.btn {
     color: var(--beaver);
     border: 1px solid var(--beaver);
     margin-right: 1rem;
-    transition: .2s;
+    transition: 0.2s;
 }
 
 .cv_button:hover {
@@ -129,16 +129,16 @@ div.btn {
     display: inline-block;
     background-color: var(--beaver);
     border-radius: 3rem;
-    padding: .5rem 3.6rem;
+    padding: 0.7rem 3.6rem;
     color: var(--jet);
     font-family: 'Cooper Hewitt';
     font-weight: bold;
+    font-size: 12px;
     text-transform: uppercase;
     letter-spacing: .1rem;
     margin: 2rem 0 2rem 1rem;
     border: none;
     cursor: pointer;
-    transition: .4s;
 }
 
 .contact_button:hover {
