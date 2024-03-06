@@ -22,9 +22,6 @@
 
 * {
     font-size: 62.5%;
-    scrollbar-width: thin;
-    scrollbar-color: var(--beaver) var(--eerie-black);
-    scroll-behavior: smooth;
 }
 
 *::-webkit-scrollbar {
@@ -471,70 +468,83 @@ span+span {
     margin-bottom: .7rem;
 }
 
-.cards-indication {
+ /* Indicação  */
+
+.cards-indication::-webkit-scrollbar {
+    width: 8px;
+}
+
+.cards-indication::-webkit-scrollbar-track {
+    background-color: var(--eerie-black);
+}
+
+
+.cards-indication::-webkit-scrollbar-thumb {
+    background-color: var(--beaver);;
+}
+
+ .cards-indication {
     background-color: var(--jet);
-    overflow-x: scroll;
+    overflow-x: auto; /* Alterado para 'auto' */
     display: flex;
-    justify-content: center;
     gap: 30px;
     width: 100%;
     padding: 200px 0px 100px 0px;
-}
-
-
-.card--indication{
+    scrollbar-width: thin;
+    scrollbar-color: var(--white) var(--eerie-black);
+  }
+  
+  .card--indication {
     background-color: var(--eerie-black);
     min-width: 350px;
+    min-height: 350px;
     border-radius: 5px;
     overflow: hidden;
-}
-
-@media (max-width: 1150px) {
+  }
+  
+  @media (max-width: 1150px) {
     .cards-indication {
-        padding: 100px 30px 100px 30px;
-        justify-content: start;
+      padding: 100px 30px 100px 30px;
+      justify-content: start;
     }
   }
-
-
-.card--indication header {
+  
+  .card--indication header {
     align-items: center;
     display: flex;
     gap: 10px;
-    height: 40px;
-    
     padding-top: 15px;
     padding-left: 15px;
     width: 350px;
-}
-
-.card--indication header strong{
+  }
+  
+  .card--indication header strong {
     color: var(--white);
     font-family: 'Cooper Hewitt';
     letter-spacing: .1rem;
     font-size: 1.4rem;
-}
-
-.card--indication header img {
+  }
+  
+  .card--indication header img {
     border-radius: 1000px;
     height: 30px;
     width: 30px;
-}
-
-.card--indication main {
+  }
+  
+  .card--indication main {
     height: 150px;
     padding: 15px;
     width: 350px;
-}
-
-.card--indication main p {
+  }
+  
+  .card--indication main p {
     color: var(--white);
     font-family: 'Cooper Hewitt';
     letter-spacing: .1rem;
     font-size: 12px;
-}
-
-.card--indication footer {
+  }
+  
+  .card--indication footer {
     display: flex;
     gap: 5px;
     justify-content: center;
@@ -542,13 +552,39 @@ span+span {
     gap: 10;
     height: 40px;
     width: 350px;
-}
-
-.card--indication footer img {
+  }
+  
+  .card--indication footer img {
     height: 20px;
-    width: 20px
-}
+    width: 20px;
+  }
 
+  @media (max-width: 768px) {
+    .cards-indication {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+  
+    .card--indication {
+      min-width: 250px;
+      width: calc(50% - 30px);
+      max-width: 90vw;
+    }
+  
+    .card--indication header {
+      width: 100%;
+    }
+  
+    .card--indication main {
+      width: auto;
+      height: auto;
+    }
+
+    .card--indication footer {
+        width: auto;
+    }
+  }
 /* Formación */
 
 .formacion {
@@ -598,7 +634,8 @@ span+span {
 }
 
 img.logo-unal {
-    width: 24rem;
+    width: 20rem;
+    border-radius: 15px;
 }
 
 img.logo-one {
